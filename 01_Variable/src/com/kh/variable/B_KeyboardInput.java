@@ -77,7 +77,8 @@ public class B_KeyboardInput {
 		double height = sc.nextDouble();
 		
 		// xxx님은 xx살이며, 사는 곳은 xxx이고 키는 xxx.x cm입니다.
-		System.out.println(name + "님은 " + age + "살이며 사는 곳은 " + address + "이며 키는 "+ height + "입니다." );
+		//System.out.println(name + "님은 " + age + "살이며 사는 곳은 " + address + "이며 키는 "+ height + "입니다." );
+		System.out.printf("%s님은 %d살이며 사는 곳은 %s이며 키는 %.1f입니다.",name,age,address,height);
 		sc.close();
 		
 	}

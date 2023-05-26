@@ -9,10 +9,10 @@ public class Run {
 
 	public static void main(String[] args) {
 		VariablePractice1 a = new VariablePractice1();
-		a.information();
+		//a.information();
 		
 		VariablePractice2 b = new VariablePractice2();
-		//b.calculate();
+		b.calculate();
 		
 		VariablePractice3 c = new VariablePractice3();
 		//c.calculate();
