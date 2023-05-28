@@ -106,6 +106,7 @@ public class D_Cast {
 		// int iSum = iNum + dNum; 연산결과인 double형이 int형에 대입불가=> 에러발생
 		// 에러 해결 방법
 		// 방법 1. 연산결과를 int형으로 강제형변환
+		
 		int iSum1 = (int)(iNum + dNum); // 15.89 => 15
 		System.out.println("iSum1 : " + iSum1); // 형변환 통해 정수값만 출력되며 데이터 손실 발생
 		
@@ -120,9 +121,9 @@ public class D_Cast {
 		System.out.println("iSum3 : " +iSum3);
 		
 		// 데이터 손실 테스트
-		int iNum2 = 128;
+		int iNum2 = 290;
 		byte bNum2 = (byte)iNum2;
-		System.out.println(bNum2);
+		System.out.println(bNum2); 
 		
 		
 	}
