@@ -115,7 +115,6 @@ public class A_If {
 		}
 		
 		
-		
 	}
 	public void method4() {
 		// 사용자에게 나이를 입력받아 어린이 청소년 성인
@@ -216,6 +215,26 @@ public class A_If {
 			System.out.println("차은우님 반갑습니다.");
 		} else {
 			System.out.println("차은우님이 아니신가보세요.. 안녕히가세요.");
+		}
+	}
+	
+	// 조건문 중첩 사용
+	public void method7() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력(양수만) : ");
+		int num = sc.nextInt();
+		
+		if(num > 0) { // 양수일 경우
+			// 짝홀 가리기
+			if(num % 2 == 0) { // 양수이면서 짝수일경우
+				System.out.println("짝수입니다.");
+			} else { // 양수이면서 홀수인경우
+				System.out.println("홀수입니다.");
+			}
+			
+		} else {
+			System.out.println("양수가 아닙니다. 잘못입력하셨습니다.");
 		}
 	}
 	
