@@ -363,6 +363,12 @@ public class A_For {
 		}
 	}
 	
+	public void method19() {
+		for(; ;) { // 조건 생략하면 기본적으로 true => 무한반복문
+			
+		}
+	}
+	
 }
 
 
