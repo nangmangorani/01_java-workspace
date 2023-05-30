@@ -234,6 +234,7 @@ public class ControlPractice {
 		System.out.println("과제점수   (20) : " + assignmentPoint);
 		System.out.println("출석점수   (20) : " + attendancePoint);
 		System.out.println("총점 : " + sum);
+		
 		if(sum >= 70 && attendance >= (20-(20 * 0.3))) {
 			System.out.println("Pass");
 		} else if(sum >= 70 && attendance < (20-(20 * 0.3))) {
