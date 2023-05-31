@@ -68,43 +68,59 @@ public class CompExample {
 	public void practice4() {
 		Scanner sc = new Scanner(System.in);
 		
-
+		int k = 0;
 		while (true) {
 			int count = 0;
-			System.out.print("문자열 : ");
-			String str = sc.nextLine();
+			
+			
+			if(k == 0) {
+				System.out.print("문자열 : ");
+				String str = sc.nextLine();
 
-			System.out.print("문자 : ");
-			char ch = sc.nextLine().charAt(0);
-			
-			for (int i = 0; i < str.length(); i++) {
-				if (str.charAt(i) == ch) {
-					count++;
+				System.out.print("문자 : ");
+				char ch = sc.nextLine().charAt(0);
+				
+				for (int i = 0; i < str.length(); i++) {
+					if (str.charAt(i) == ch) {
+						count++;
+					}
 				}
-			}
-			System.out.println(str + "안에 포함된 " + ch + " 개수 : " + count);
-			
-			System.out.print("더 하시겠습니까? (y/n) : ");
-			String reGame = sc.nextLine();
-			
-			if(reGame.equals("y") || reGame.equals("Y")) {
-				continue;
-			} else if(reGame.equals("n") || reGame.equals("N")) {
-				break;
-			} else {
-				while(true) {
-					System.out.println("잘못된 대답입니다. 다시 입력해주세요.");
-					System.out.print("더 하시겠습니까? (y/n) : ");
-					reGame = sc.nextLine();
+				System.out.println(str + "안에 포함된 " + ch + " 개수 : " + count);
+				
+				System.out.print("더 하시겠습니까? (y/n) : ");
+				String reGame = sc.nextLine();
+				
+				if(reGame.equals("y") || reGame.equals("Y")) {
 					continue;
+				} else if(reGame.equals("n") || reGame.equals("N")) {
+					break;
+				} else {
+					while(true) {
+						System.out.println("잘못된 대답입니다. 다시 입력해주세요.");
+						System.out.print("더 하시겠습니까? (y/n) : ");
+						reGame = sc.nextLine();
+						if(reGame.equals("y") || reGame.equals("Y")) {
+							break;
+						} else if(reGame.equals("n") || reGame.equals("N")) {
+							k=1;
+							break;
+						} else {
+							continue;
+						}
+						
+					}
+					
+					
 				}
-				
-				
+			} else if(k == 1) {
+				break;
 			}
+			
 
 		}
 
 	}
+	
 	
 
 }
