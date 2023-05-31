@@ -12,7 +12,7 @@ public class Run {
 		//a.practice1();
 		//a.practice2();
 		//a.practice3();
-		a.practice4();
+		//a.practice4();
 		
 		UpAndDown b = new UpAndDown();
 		//b.upDown();
