@@ -146,24 +146,29 @@ public class A_For {
 		// 사용자에게 값을 입력 받아 1부터 입력받은 수까지의 합계 출력
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("1 이상의 정수를 입력하세요 : ");
-		int num = sc.nextInt(); // 7
-		
-		if(num > 0) {
-			// 누적합
-			// 1. sum 변수 만들기
-			int sum = 0;
+		while(true) {
+			System.out.print("1 이상의 정수를 입력하세요 : ");
+			int num = sc.nextInt(); // 7
 			
-			// 2. for문 돌리기
-			for(int i = 1; i <= num; i++) {
-				// 누적합 공식
-				sum += i;
-			}
-			System.out.println("1부터 " + num + "까지의 합 : " + sum);
+			if(num > 0) {
+				// 누적합
+				// 1. sum 변수 만들기
+				int sum = 0;
 				
-		} else {
-			System.out.println("잘못입력했습니다.");
+				// 2. for문 돌리기
+				for(int i = 1; i <= num; i++) {
+					// 누적합 공식
+					sum += i;
+				}
+				System.out.println("1부터 " + num + "까지의 합 : " + sum);
+				break;
+					
+			} else {
+				System.out.println("잘못입력했습니다. 다시입력해주세요");
+			}
 		}
+		
+		
 		
 	}
 	
@@ -248,7 +253,6 @@ public class A_For {
 		for(int i = 0; i<str.length(); i++) {
 			System.out.println(str.charAt(i));
 		}
-		
 		
 	}
 	
