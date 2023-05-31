@@ -12,7 +12,7 @@ public class UpAndDown {
 		 // 5. 정답 맞췄을경우 문구 출력한 후 break;
 		 
 		 int random = (int)(Math.random() * 100 + 1); //랜덤 수
-		 int count = 0; // 정답 횟수
+		 int count = 1; // 정답 횟수
 		 
 		 Scanner sc = new Scanner(System.in);
 		 
