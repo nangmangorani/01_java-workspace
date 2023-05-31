@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class A_Break {
 
+	
 	/*
 	 * break; : 반복문 안에 사용되는 분기문
 	 * 			break;가 실행되는 순간 현재 속해있는 반복문을 강제로 빠져나감
@@ -25,6 +26,7 @@ public class A_Break {
 			}
 		}
 	}
+	
 	
 	public void method2() {
 		// 사용자에게 문자열을 입력 받아 해당 그 문자열의 길이 출력(무한반복)

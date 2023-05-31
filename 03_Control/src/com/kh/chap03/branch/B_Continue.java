@@ -4,7 +4,7 @@ public class B_Continue {
 
 	/*
 	 * continue; -> 반복문 안에 기술되는 구문 continue; 구문 실행시 그 뒤의 구문을 실행하지 않고 곧바로 현재 속해있는 반복문
-	 * 위로 올라간다.
+	 * 위로 올라간다. 
 	 * 
 	 */
 	public void method1() {
@@ -40,7 +40,6 @@ public class B_Continue {
 			} else {				
 				sum += i; //누적합 공식
 			}
-			
 			
 		}
 		
