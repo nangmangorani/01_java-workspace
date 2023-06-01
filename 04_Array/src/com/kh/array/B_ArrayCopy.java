@@ -104,6 +104,7 @@ public class B_ArrayCopy {
 		//System.arraycopy(origin, 0, copy, 2, 5);
 		System.arraycopy(origin, 1, copy, 3, 3);
 		
+		
 		for(int i =0; i<copy.length; i++) {
 			System.out.print(copy[i] + " ");
 		}
@@ -120,9 +121,10 @@ public class B_ArrayCopy {
 		// 3. Arrays 클래스에서 제공하는 copyOf() 메소드사용
 		int[] origin = {1,2,3,4,5};
 		// 복사본 배열 = Arrays.copyOf(원본배열명,복사할길이);
-		//int[] copy = Arrays.copyOf(origin, 5);
+		int[] copy = Arrays.copyOf(origin, 2);
 		//int[] copy = Arrays.copyOf(origin, 3);
-		int[] copy = Arrays.copyOf(origin, 10); //앞자리부터 채워짐
+		//int[] copy = Arrays.copyOf(origin, 10); //앞자리부터 채워짐
+		
 		
 		/*
 		 * [참고]
@@ -169,5 +171,7 @@ public class B_ArrayCopy {
 		System.out.println("origin의 주소값 : " + origin.hashCode());
 		System.out.println("copy의 주소값 : " + copy.hashCode());
 	}
-
+	
+	
+	
 }
