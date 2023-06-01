@@ -2,7 +2,7 @@ package com.kh.chap01.condition;
 
 import java.util.Scanner;
 
-public class A_If {
+public class A_If { 
 	
 	/*
 	 * 기본적으로 프로그램은 순차적으로 진행
