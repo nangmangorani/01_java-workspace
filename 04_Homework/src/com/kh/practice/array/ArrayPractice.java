@@ -1,5 +1,6 @@
 package com.kh.practice.array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayPractice {
@@ -215,38 +216,129 @@ public class ArrayPractice {
 		
 	}
 	
+	public void practice13(){
+		int[] arr = new int[10];
+		
+		for(int i =0; i<arr.length; i++) {
+			
+			int random = (int)(Math.random() * 10 + 1);
+			arr[i] = random;
+			for(int j = 0; j<i; j++) {
+				if(arr[i] == arr[j]) {
+					i--;
+					break;
+				}
+			}
+			
+		}
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+			
+		}
+
+	}
 	
+	public void practice14() {
+		int[] arr = new int[10];
+
+		for (int i = 0; i < arr.length; i++) {
+			
+			int random = (int) (Math.random() * 10 + 1);
+			arr[i] = random;
+			for (int j = 0; j < i; j++) {
+				if (arr[i] == arr[j]) {
+					i--;
+					break;
+				}
+			}
+
+		}
+
+		Arrays.sort(arr);
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+			
+		}
+		
+	}
 	
-	
-	
-	
+	public void practice15() {
+		String answer = ""; // 문자열에 있는 문자 출력위해서.
+		int count = 0; // 숫자 세
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("문자열 : ");
+		String str = sc.nextLine(); // a p p l i c a t i o n
+		
+		char[] ch = new char[str.length()];
+		
+		for(int i =0; i<ch.length; i++) { // i=0 => a 가 들어감  i=1에서 p가 들어감.
+			ch[i] = str.charAt(i);
+			
+			boolean same = true;
+			
+			for(int j =0; j<i; j++) { // j에서 0은 일단 그냥 패스  i가 1이면 j=0이랑 i 0비교, 
+				if(ch[j] == ch[i]) {
+					same = false;
+				}
+				
+			}
+			
+			if(i != ch.length-1) { // 여기부턴 입력식! // i가 끝나지 않았으니까 a, i가 1일때는
+				answer += ch[i] + ", ";
+			} else {
+				answer += ch[i];
+			}
+		}
+
+		
+		System.out.print(answer);
+		
+		
+		
+	}
 	
 	
 	
 	public void practice16(){
+		String answer = ""; // 여기에 문자열 쌓기
 		Scanner sc = new Scanner(System.in);
 		System.out.print("배열의 크기를 입력하세요 : ");
-		int arrNum = sc.nextInt();
-		sc.nextLine();
 		
-		System.out.print("1번째 문자열 : ");
-		String first = sc.nextLine();
-		
-		System.out.print("2번째 문자열 : ");
-		String second = sc.nextLine();
-		
-		System.out.print("3번째 문자열 : ");
-		String third = sc.nextLine();
-		
-		System.out.print("더 값을 입력하시겠습니까(Y/N) : ");
-		char ch1 = sc.nextLine().charAt(0);
-		
-		if(ch1 == 'Y' || ch1 == 'y') {
-			;
-		} else if(ch1 =='N' || ch1 == 'n') {
+		while(true) {
+			int arrNum = sc.nextInt();
+			sc.nextLine();
 			
+			for(int i =1; i<= arrNum; i++) {
+				System.out.print(i + "번째 문자열 : ");
+				answer += sc.nextLine();
+				if(i != arrNum) {
+					answer += ", ";
+				} else {
+					;
+				}
+				
+			}
+			
+			
+			System.out.print("더 값을 입력하시겠습니까(Y/N) : ");
+			char ch1 = sc.nextLine().charAt(0);
+			
+			
+			if(ch1 == 'Y' || ch1 == 'y') {
+				answer += ", ";
+				System.out.print("더 입력하고 싶은 개수 : ");
+
+				continue;
+			} else if(ch1 =='N' || ch1 == 'n') {
+				break;
+			}
 		}
-		
+		System.out.println("[" + answer + "]");
 		
 		
 		
