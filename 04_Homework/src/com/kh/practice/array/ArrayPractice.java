@@ -134,25 +134,29 @@ public class ArrayPractice {
 	}
 	
 	public void practice9() {
-		Scanner sc = new Scanner(System.in);
-		String[] menu = {"후라이드","양념","간장"};
-		
-		System.out.print("치킨 이름을 입력하세요 : ");
-		String chicken = sc.nextLine();
-		
-		// 배열돌려서 값 찾기
-		
-		for(int i=0; i<menu.length;i++) {
-			if(menu[i].equals(chicken)) {
-				System.out.println(chicken + "치킨 배달 가능");
-				break;
-			} else {
-				System.out.println(chicken + "치킨은 없는 메뉴입니다.");
-				break;
-			}
-		}
-		
-	}
+	      Scanner sc = new Scanner(System.in);
+	      String[] menu = {"후라이드", "양념", "간장"};
+	      boolean a = false;
+	      
+	      System.out.print("치킨 이름을 입력하세요 : ");
+	      String chicken = sc.nextLine();
+	      
+	      
+	      for(int i=0; i<menu.length;i++) {
+	         
+	         if(menu[i].equals(chicken)) {
+	            System.out.println(chicken + "치킨 배달 가능");
+	            a = true;
+	            break;
+	         }
+	         
+	      }
+	      if(a == false) {
+	         System.out.println(chicken + "치킨은 없는 메뉴입니다.");
+	      }
+	      
+	      
+	   }
 	
 	public void practice10() {
 		Scanner sc = new Scanner(System.in);
