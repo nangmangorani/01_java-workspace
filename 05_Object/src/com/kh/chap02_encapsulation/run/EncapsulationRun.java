@@ -5,7 +5,7 @@ import com.kh.chap02_encapsulation.model.vo.Student;
 public class EncapsulationRun {
 	
 	/*
-	 * 7. 캡슐화 과정까지 적용해서 완벽한 클래의 형태를 갖추게끔!
+	 * 7. 캡슐화 과정까지 적용해서 완벽한 클래스의 형태를 갖추게끔!
 	 * 
 	 * 캡슐화 : 추상화를 통해 정의된 속성들과 기능들을 하나로 묶어 관리하는 기법중 하나로 
 	 * 		  클래스에서 가장 중요한 목적인 "데이터의 접근 제한"을 원칙으로

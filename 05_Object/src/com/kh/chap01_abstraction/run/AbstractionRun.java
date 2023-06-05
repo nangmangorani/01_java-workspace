@@ -82,7 +82,7 @@ public class AbstractionRun {
 		Student moon = new Student();
 		// 클래스명 별칭 = new 클래스명();
 		
-		// 주소값을 담고있음!! 기본자료형이 아니기 때문에 
+		// 주소값을 담고있음!! 기본자료형이 아니기 때문에
 		
 		// 여기까지는 Heap 영역에 할당된 공간에는 JVM의 초기값들이 세팅되어 있을 것
 		
