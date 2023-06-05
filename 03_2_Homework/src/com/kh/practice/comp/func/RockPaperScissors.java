@@ -25,7 +25,7 @@ public class RockPaperScissors {
 		int lose = 0;
 
 		while (true) {
-			// 컴퓨터의 가위바위보 값
+			// 컴퓨터의 가위바위보 값, switch를 통해서 하는방법도 있음.
 			String computer = "";
 			int random = (int) (Math.random() * 3 + 1);
 			if (random == 1) {
@@ -36,14 +36,14 @@ public class RockPaperScissors {
 				computer = "보";
 			}
 
-			// 사람
+			// 사람, 선생님은 if switch문써서 맞다이뜸 
 			System.out.print("가위바위보 : ");
 			String human = sc.nextLine();
 			if (human.equals("가위") || human.equals("바위") || human.equals("보")) {
 
 			} else if (human.equals("exit")) {
 				System.out.println((win + draw + lose) + "전 " + win + "승 " + draw + "무 " + lose + "패");
-				break;
+				return; // 종료구문인데 break랑 뭔차인지..?
 			} else {
 				System.out.println("잘못 입력하셨습니다.");
 				continue;

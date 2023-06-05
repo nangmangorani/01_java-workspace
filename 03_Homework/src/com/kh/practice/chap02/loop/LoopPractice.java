@@ -281,6 +281,22 @@ public class LoopPractice {
 
 			}
 
+		
+		/* 방법2~
+		 * switch(operator) {
+		case "+" :
+			System.out.printf("%d %s %d = %d\n",num1, operator, num2, (num1 + num2));
+			break;
+		case "-" : ..
+		case "*" : ..
+		case "/" : ..
+		case "%" : ..
+		default : 
+			System.out.println("없는 연산자입니다. 다시 입력 ㄱㄱ")
+		}
+		 */
+		
+		
 		}
 
 	}

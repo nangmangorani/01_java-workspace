@@ -18,6 +18,6 @@ public class Run {
 		//b.upDown();
 		
 		RockPaperScissors c = new RockPaperScissors();
-		//c.rps();
+		c.rps();
 	}
 }
