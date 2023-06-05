@@ -303,6 +303,8 @@ public class ArrayPractice {
 //		System.out.print(answer);
 //		
 //		
+		String answer = ""; // 문자열에 있는 문자 출력위해서.
+		
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -339,6 +341,9 @@ public class ArrayPractice {
 		}
 		System.out.println();
 		System.out.println("문자 개수 : " + count);
+		
+		System.out.print(answer);
+		
 		
 		
 	}
