@@ -32,5 +32,4 @@ public class Student { // 학생을 추상화해서 만든 클래스(완벽한 �
 	public double height; // 키
 	
  	
-	
 }

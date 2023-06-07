@@ -38,7 +38,7 @@ public class Student { // 나만의 자료형
 		//name = name; 색이없다. 매개변수 name = 매개변수 name; 이라고 쓴거
 					// 필드명과 매개변수명이 동일한 시점에서 해당 메소드영역에서 만들어진 변수가 우선순위가 높음
 		// 필드 name = 매개변수 name; 원함
-		this.name = name; 
+		this.name = name; // this => Student 클래스의 주소값 갖고있음ㅋ
 	}
 	
 	public void setAge(int age) {
