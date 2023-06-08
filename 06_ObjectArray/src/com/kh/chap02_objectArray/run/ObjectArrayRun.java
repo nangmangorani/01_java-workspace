@@ -8,7 +8,8 @@ public class ObjectArrayRun {
 
 	public static void main(String[] args) {
 		
-		
+		int[] arr = new int[3];
+		System.out.println(arr[0]);
 		
 		
 		Phone[] phones = new Phone[3];
@@ -20,7 +21,7 @@ public class ObjectArrayRun {
 		phones[0] = new Phone();
 		phones[1] = new Phone("아이폰", "애플", 1300000, "14pro");
 		phones[2] = new Phone("갤럭시", "삼성", 1200000, "s23");
-		System.out.println(phones[1].getName());
+		
 		
 		phones[0].setName("벨벳폰");
 		phones[0].setBrand("엘지");
@@ -50,6 +51,8 @@ public class ObjectArrayRun {
 				System.out.println("당신이 구매하고자 하는 휴대폰의 가격은 " + phones[i].getPrice() + "원입니다.");
 			} 
 		}
+		
+	
 		
 		
 		
