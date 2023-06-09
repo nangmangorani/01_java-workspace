@@ -8,10 +8,7 @@ public class ObjectArrayRun {
 
 	public static void main(String[] args) {
 		
-		int[] arr = new int[3];
-		System.out.println(arr[0]);
-		
-		
+	
 		Phone[] phones = new Phone[3];
 		
 		System.out.println(phones[0]); // 아직 객체생성 안해서 null이 나옴
