@@ -30,6 +30,7 @@ public class Employee extends Person {
 		this.dept = dept;
 	}
 
+	@Override
 	public String toString() {
 		return super.toString() + ", salary : " + salary + ", dept : " + dept;
 	}

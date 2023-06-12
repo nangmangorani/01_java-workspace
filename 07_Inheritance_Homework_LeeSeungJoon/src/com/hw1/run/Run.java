@@ -73,6 +73,8 @@ public class Run {
 					System.out.print("잘못 입력하셨습니다. ");
 					continue;
 				}
+				// Y일때는 어차피 반복문 돌면되니까 분기처리 ㄴㄴ
+				// N일때 반복문 빠져나와서 처리
 			}
 			
 			if(flag == true) {
