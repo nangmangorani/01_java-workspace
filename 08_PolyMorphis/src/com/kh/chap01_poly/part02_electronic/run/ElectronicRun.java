@@ -55,9 +55,9 @@ public class ElectronicRun {
 		
 		// 추가용 메소드 => insert
 		
-		es.insert(new Desktop("samsung", "데땁", 1200000, "gtx1070"));
-		es.insert(new NoteBook("LG", "그램", 2000000, 4));
-		es.insert(new Tablet("Apple", "아이패드", 800000, false));
+//		es.insert(new Desktop("samsung", "데땁", 1200000, "gtx1070"));
+//		es.insert(new NoteBook("LG", "그램", 2000000, 4));
+//		es.insert(new Tablet("Apple", "아이패드", 800000, false));
 		
 		// 조회용 메소드 => select
 		// 이번에는 이름 하나로! 
