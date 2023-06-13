@@ -41,9 +41,7 @@ public class A_StringPoolTest {
 		// 2. 문자열을 리터럴값으로 생성
 		String str1 = "hello";
 		String str2 = "hello";
-		// String Pool 특징 : 동일한 문자열 가질 수 없음.
-		
-		
+		// StringPool 특징 : 동일한 문자열 가질 수 없음.
 		
 		
 		System.out.println(str1);
