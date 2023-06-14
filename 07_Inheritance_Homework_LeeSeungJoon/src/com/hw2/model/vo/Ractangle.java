@@ -30,9 +30,9 @@ public class Ractangle extends Point{
 	}
 	
 	public void draw() {
-		System.out.println();
 		super.draw();
 		System.out.println(", 너비 : " + (width * height) + ", 둘레 : " + (width + height) * 2);
+		System.out.println();
 	}
 	
 }

@@ -46,13 +46,14 @@ public class TokenMenu {
 
 	public void inputMenu() {
 		System.out.print("문자열을 입력하세요 : ");
-		String put = tc.firstCap(sc.nextLine()); // 입력받은 값
+		String input = sc.nextLine();
+		String put = tc.firstCap(input); // 입력받은 값
 		System.out.println("첫 글자 대문자 : " + put);
 		System.out.print("찾을 문자 하나를 입력하세요 : ");
 		char ch = sc.nextLine().charAt(0);
-		tc.findChar(put, ch);
+		int count = tc.findChar(put, ch);
 		
-		System.out.println(ch + "가 들어간 개수 : " + tc.findChar(put, ch));
+		System.out.println(ch + "가 들어간 개수 : " + count);
 		// 여기서 다시 메뉴로 돌아가게 구현
 	}
 

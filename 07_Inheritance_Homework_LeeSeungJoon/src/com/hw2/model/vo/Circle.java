@@ -20,9 +20,9 @@ public class Circle extends Point{
 	}
 	
 	public void draw() {
-		System.out.println();
 		super.draw();
 		System.out.printf(", 면적 : %.1f, 둘레 : %.1f\n",Math.PI * radius * radius, Math.PI * radius *2);
+		System.out.println();
 	}
 	// %d 정수 %f 실수 %s 문자열 %c 문자
 	

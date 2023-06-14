@@ -19,11 +19,16 @@ public class TokenController {
 	
 	public String firstCap(String input) {
 		// a 97 z 122	A 65 Z 90
+		String str = input.substring(0, 1); //a
+		str = str.toUpperCase(); //A
+		input = str.concat(input.substring(1)); // pplication
+		/*
 		char[] ch = input.toCharArray();
 		if(ch[0] >= 97 && ch[0]<=122) {
 			ch[0] = (char) (ch[0] - 32);
 		}
 		input = String.valueOf(ch);
+		*/
 		return input;
 		
 	}
