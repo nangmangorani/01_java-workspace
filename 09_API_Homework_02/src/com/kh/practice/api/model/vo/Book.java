@@ -1,5 +1,6 @@
 package com.kh.practice.api.model.vo;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Book {
@@ -20,8 +21,6 @@ public class Book {
 		this.publishDate = publishDate;
 		this.price = price;
 	}
-
-	
 
 	public String getTitle() {
 		return title;
@@ -65,8 +64,14 @@ public class Book {
 
 	@Override
 	public String toString() {
+		
+		// simpleDateFormat을 통해 Date -> String으로 바꾸고 형태갖추기
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
+		String str = sdf.format(publishDate);
+		
+		
 		return "Book [title=" + title + ", author=" + author + ", publisher=" + publisher + ", publishDate="
-				+ publishDate + ", price=" + price + "]";
+				+ str + ", price=" + price + "]";
 	}
 	
 	

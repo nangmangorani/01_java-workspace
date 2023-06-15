@@ -121,7 +121,7 @@ public class B_ArrayCopy {
 		// 3. Arrays 클래스에서 제공하는 copyOf() 메소드사용
 		int[] origin = {1,2,3,4,5};
 		// 복사본 배열 = Arrays.copyOf(원본배열명,복사할길이);
-		int[] copy = Arrays.copyOf(origin, 2);
+		int[] copy = Arrays.copyOf(origin, 5);
 		//int[] copy = Arrays.copyOf(origin, 3);
 		//int[] copy = Arrays.copyOf(origin, 10); //앞자리부터 채워짐
 		
@@ -138,7 +138,7 @@ public class B_ArrayCopy {
 		 * java.lang 이외의 패키지에 있는 클래스들을 쓸때는 무조건 import 해야됨
 		 * 
 		 */
-		
+		System.out.println(copy.length);
 		for(int i =0; i<copy.length; i++) {
 			System.out.print(copy[i] + " ");
 		}
