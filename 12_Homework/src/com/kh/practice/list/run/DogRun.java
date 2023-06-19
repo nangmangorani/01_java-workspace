@@ -28,21 +28,11 @@ public class DogRun {
 			
 			if(num == 5) {
 				list.add(2, new Dog(name,age,kind));
+			}else {
+				list.add(new Dog(name,age,kind));
 			}
-			list.add(new Dog(name,age,kind));
 			num++;
 		}
-		
-		System.out.print(num + "번째 강쥐 이름 입력 : ");
-		String name = sc.nextLine();
-		
-		System.out.print("강쥐 나이 입력 : ");
-		int age = sc.nextInt();
-		
-		sc.nextLine();
-		
-		System.out.print("강쥐 종 입력 (ex. 말티즈): ");
-		String kind = sc.nextLine();
 		
 		System.out.println("==============================");
 		System.out.println("전체 깡쥐 출력");

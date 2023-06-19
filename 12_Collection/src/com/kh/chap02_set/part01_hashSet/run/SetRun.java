@@ -38,6 +38,7 @@ public class SetRun {
 		
 		System.out.println(hs2); // 저장 순서 유지 안됨!(인덱스 개념 없음) / 중복 제거 안됨 => 왜? 동일객체로 판단이 안되고 있어서..
 		
+		
 		// HashSet 이라는 공간에 객체가 추가 될 때마다 동일 객체인지 비교!!
 		// 동일 객체 : 각 객체마다 hashCode() 호출 결과가 일치하고, equals() 비교시 true 일 경우
 		

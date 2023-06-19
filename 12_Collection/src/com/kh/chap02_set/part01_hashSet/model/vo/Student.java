@@ -1,5 +1,7 @@
 package com.kh.chap02_set.part01_hashSet.model.vo;
 
+import java.util.Objects;
+
 public class Student {
 	
 	private String name;
@@ -43,6 +45,10 @@ public class Student {
 	public String toString() {
 		return "Student [name=" + name + ", age=" + age + ", score=" + score + "]";
 	}
+
+	
+	
+	
 	
 	@Override
 	public int hashCode() { // 모든 필드에 담긴 값이 일치하면 동일한 hashCode 반환하도록
@@ -69,6 +75,7 @@ public class Student {
 		}
 		
 	}
+	
 	
 	
 }

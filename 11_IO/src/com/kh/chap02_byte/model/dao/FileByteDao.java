@@ -90,9 +90,9 @@ public class FileByteDao {
 
 			// 2. 파일로부터 데이터를 읽어들이고자 할 때 read 메소드 사용
 			// 1byte 단위로 하나씩 읽어옴 / 반환형이 int여서 숫자로 읽어들임
-
+			
 			// 실제로 파일에 얼마만큼 데이터가 있는지 모를경우 => 반복문 활용
-
+			
 			/*
 			 * System.out.println(fin.read()); //a System.out.println(fin.read()); //b
 			 * System.out.println(fin.read()); //c System.out.println(fin.read()); //d
