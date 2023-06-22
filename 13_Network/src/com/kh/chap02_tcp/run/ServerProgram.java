@@ -21,7 +21,6 @@ public class ServerProgram {
 		 * 
 		 * Server Socket 포트와 연결되어(Bind) 외부의 연결요청 기다리다 연결요청 들어오면 수락해줄 용도 수락 => 통신 할 수 있는
 		 * Client Socket 생성
-		 * 
 		 */
 
 		Scanner sc = new Scanner(System.in);

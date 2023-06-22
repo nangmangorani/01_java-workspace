@@ -56,9 +56,6 @@ public class ClientProgram {
 					String message = br.readLine();
 					System.out.println("서버에게 전달받은 메세지 : " + message);
 					
-					
-					
-					
 				}
 			}
 			
