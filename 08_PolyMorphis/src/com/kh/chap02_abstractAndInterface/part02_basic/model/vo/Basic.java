@@ -12,7 +12,7 @@ public interface Basic {
 //	}
 	
 	// 인터페이스에서의 필드는 무조건 상수필드임!!
-	/*public static final*/ int NUM = 10;
+	/*public static final*/ int NUM = 10;	
 	
 	// 인터페이스에서의 메소드는 무조건 추상 메소드!!
 	/*public abstract*/ void eat();

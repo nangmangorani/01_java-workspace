@@ -61,8 +61,8 @@ public class BookController implements BookManager {
 			}
 		}
 		return arr;
-
-	}
+		
+	} 
 
 	@Override
 	public ArrayList<Book> magazineOfThisYearInfo(int year) {

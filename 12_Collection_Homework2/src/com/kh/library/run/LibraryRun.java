@@ -10,6 +10,7 @@ import com.kh.library.model.vo.Magazine;
 public class LibraryRun {
 
 	public static void main(String[] args) {// 소장책 DB
+		
 		ArrayList<Book> bList = new ArrayList<>();
 		
 
@@ -114,7 +115,7 @@ public class LibraryRun {
 				
 				Book k = bc.searchBookBybNo(bNo);
 				
-				if (bkOrMaga.equals(true)) {
+				if (bkOrMaga.equals(true)) { //일반도서
 					if(k == null) {
 						bc.addBook(new Book(bNo,title,author,publisher,price,description));
 					} else {
@@ -155,8 +156,8 @@ public class LibraryRun {
 					sc.nextLine();
 					System.out.print("bNo을 입력하세요 : ");
 					bNo = sc.nextLine();
-					Book b = bc.searchBookBybNo(bNo);
-					if(b.getbNo() == null) {
+					Book b = bc.searchBookBybNo(bNo); // null or 책한권
+					if(b == null) {
 						System.out.println("조회된 도서가 없습니다.");
 					} else {
 						System.out.println(b);
@@ -164,9 +165,8 @@ public class LibraryRun {
 					continue;
 					
 				} else if (search == 2) { // 책 제목으로 책 찾기
-					System.out.print("책 제목을 입력하세요 : ");
 					sc.nextLine();
-					
+					System.out.print("책 제목을 입력하세요 : ");
 					title = sc.nextLine();
 					ArrayList<Book> arr = new ArrayList<>();
 					arr = bc.searchBookByTitle(title);
